@@ -1,70 +1,197 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #f3f4f6, #ffffff);
-    color: #333;
-    text-align: right;
+/* General Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #1a73e8;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
+    font-size: 2.5rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
 }
 
-nav ul {
-    list-style: square;
-    padding: 0;
+header nav ul {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
     text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
+header nav ul li a:hover {
+    background-color: #1558b3;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
 main {
-    padding: 20px;
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 img.rounded {
     border-radius: 15px;
     max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
 }
 
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
+    font-size: 1rem;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 table caption {
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-table, th, td {
+table th,
+table td {
     border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
+    padding: 12px 15px;
     text-align: left;
 }
 
+table th {
+    background-color: #1a73e8;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+/* Video */
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.5);
+}
+
+form button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1558b3;
+}
+
+/* Footer Styles */
 footer {
-    background-color: #4CAF50;
+    background-color: #1a73e8;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
+
