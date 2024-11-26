@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Multimedia Design - Home</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        function showDate() {
+            const dateElement = document.getElementById("date");
+            const currentDate = new Date().toLocaleDateString();
+            dateElement.textContent = currentDate;
+        }
+    </script>
+</head>
+<body onload="showDate()">
+    <header>
+        <h1>Saad Multimedia Design</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Saad Multimedia Design</h2>
+        <p>Your go-to partner for creative web and multimedia solutions in Riyadh.</p>
+        <p id="date"></p>
+        <img src="../images/welcome.jpg" alt="Welcome Image" class="rounded">
+        <p>We specialize in design services for Event Photography, Sports and Fitness Centers, and Health Food Stores.</p>
+        <p><a href="https://www.example.com" target="_blank">Learn more about us</a></p>
+        <table>
+            <caption>Our Key Services</caption>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Design</td>
+                    <td>Custom and responsive designs for your business.</td>
+                </tr>
+                <tr>
+                    <td>Branding</td>
+                    <td>Creating unique identities for brands.</td>
+                </tr>
+                <tr>
+                    <td>Photography</td>
+                    <td>Professional event photography services.</td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </main>
+    <footer>
+        <p>Contact us at <a href="202111289@yu.edu.sa">href="202111289@yu.edu.sa</a></p>
+    </footer>
+</body>
+</html>
